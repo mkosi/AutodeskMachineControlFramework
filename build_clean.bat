@@ -38,7 +38,7 @@ go run ../../Server/createDist.go ../Output %GITHASH%
 cd "%builddir%"
 
 echo "Building Core Modules"
-call cmake ..
+call cmake -A x64 ..
 call cmake --build . --config Release
 
 echo "Building Developer Package"
