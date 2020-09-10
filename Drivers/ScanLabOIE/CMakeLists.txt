@@ -136,4 +136,5 @@ set_target_properties(liboie PROPERTIES VISIBILITY_INLINES_HIDDEN ON)
 # This makes sure symbols are exported
 target_compile_options(liboie PRIVATE "-D__LIBOIE_EXPORTS")
 target_include_directories(liboie PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/LibOIE)
-target_include_directories(liboie PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Interfaces)
+target_include_directories(liboie PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/LibOIE/Interfaces)
+target_include_directories(liboie PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/LibOIE/Libraries)
