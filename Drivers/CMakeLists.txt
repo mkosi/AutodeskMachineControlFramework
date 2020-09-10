@@ -20,4 +20,4 @@ project("AMCDrivers")
 add_subdirectory(ScanLab)
 add_subdirectory(Marlin)
 add_subdirectory(Camera)
-
+#add_subdirectory(ScanLabOIE)
