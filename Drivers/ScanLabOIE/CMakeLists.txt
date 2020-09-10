@@ -123,6 +123,8 @@ endforeach()
 file(GLOB LIBOIE_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/LibOIE/*.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/Interfaces/liboie*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/LibOIE/Implementation/liboie*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/LibOIE/Interfaces/liboie*.cpp
 )
 
 add_library(liboie SHARED ${LIBOIE_SRC})
